@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="box">
+	<h2 style="color:#BB8FCE;font-style: bold;line-height: 1.8;">Organization List</h2>
+    {% for item in Org_list: %}
+        <h4 href="#" style="color:grey;font-style: italic;line-height:0.4;">{{item['name']}}</h4>
+    {% endfor %}
+</div>
+<br>
+<a style="padding-left:30px;" href="{{url_for('Meraki')}}">back</a>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="meraki" style="text-align:center">
+        <h3 style="color:#068E8C;letter-spacing: 1px;">Meraki Dashboard Functionalities</h3>
+        <br>
+        <a href="{{url_for('getOrganizations')}}">Get Organizations</a>
+        <br>
+        <br>
+        <a href="{{url_for('CreateOrganization')}}">Create Organization</a>
+        <br>
+        <br>
+        <a href="{{url_for('DeleteOrganization')}}">Delete Organization</a>
+        <br>
+        <br>
+        <a href="{{url_for('CreateTemplate')}}">Create Template</a>
+        <br>
+        <br>
+        <a href="{{url_for('DeleteTemplate')}}">Delete Template</a>
+        <br>
+        <br>
+        <a href="{{url_for('ListNetworks')}}">List Networks</a>
+        <br>
+        <br>
+        <a href="{{url_for('CreateNetwork')}}">Create Network</a>
+        <br>
+        <br>
+        <a href="{{url_for('DeleteNetwork')}}">Delete Network</a>
+        <br>
+        <br>
+        <a href="{{url_for('ClaimDevice')}}">Claim Device</a>
+    </div>
+
+{% endblock %}
